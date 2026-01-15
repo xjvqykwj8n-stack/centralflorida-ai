@@ -6,10 +6,8 @@
   <title>Central Florida AI Solutions | Simple AI Tools for Local Businesses</title>
   <meta name="description" content="Affordable AI chatbots, content automation, appointment scheduling & more for small businesses in Chiefland, Gainesville and Central Florida."/>
   
-  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts (Inter) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -18,7 +16,30 @@
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background-color: #000;
-      color: #e0f2f1; /* light teal-white */
+      color: #e0f2f1;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      position: relative;
+    }
+    .background-image {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: -1;
+    }
+    .content-wrapper {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
     }
     .glass-card {
       background: rgba(0, 0, 0, 0.68);
@@ -33,20 +54,20 @@
     }
   </style>
 </head>
-<body class="relative min-h-screen">
+<body>
 
-  <!-- Full-page dark palm-circuit background -->
+  <!-- Full-page fixed background image (behind everything) -->
   <img 
-    src="https://github.com/xjvqykwj8n-stack/centralflorida-ai/blob/main/fd603269-bacf-41fe-ae3c-cd2968511e3d.jpg?raw=true"  <!-- ← REPLACE with your exact raw URL -->
+    src="https://github.com/xjvqykwj8n-stack/centralflorida-ai/blob/main/fd603269-bacf-41fe-ae3c-cd2968511e3d.jpg?raw=true"  <!-- ← Replace with your EXACT raw URL -->
     alt="Dark palm and circuit background"
-    class="absolute inset-0 w-full h-full object-cover z-0"
+    class="background-image"
   />
 
-  <!-- Stronger global dark overlay -->
-  <div class="absolute inset-0 bg-black/70 z-0"></div>
+  <!-- Dark overlay for readability -->
+  <div class="overlay"></div>
 
-  <!-- All content -->
-  <div class="relative z-10">
+  <!-- All visible content -->
+  <div class="content-wrapper">
 
     <!-- Hero -->
     <header class="py-40 px-6 md:py-56 md:px-12 text-center">
