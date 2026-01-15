@@ -18,17 +18,18 @@
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background-color: #000;
-      color: white;
+      color: #e0f2f1; /* light teal-white for contrast */
     }
     .glass-card {
-      background: rgba(0, 0, 0, 0.7);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(0, 109, 119, 0.3);
-      border-radius: 1.5rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(0, 109, 119, 0.35);
+      border-radius: 1.75rem;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
     }
     h1, h2, h3 {
-      text-shadow: 0 2px 12px rgba(0,0,0,0.9);
+      text-shadow: 0 3px 15px rgba(0,0,0,0.9);
     }
   </style>
 </head>
@@ -36,21 +37,21 @@
 
   <!-- Full-page dark palm-circuit background -->
   <img 
-    src="YOUR_RAW_IMAGE_URL_HERE"  <!-- ← Paste your GitHub raw URL here -->
+    src="https://raw.githubusercontent.com/xjvqykwj8n-stack/centralflorida-ai/main/YOUR_IMAGE_FILENAME.jpg"  <!-- ← Replace with your exact raw URL -->
     alt="Dark palm and circuit background"
     class="absolute inset-0 w-full h-full object-cover z-0"
   />
 
-  <!-- Darker global overlay for better contrast -->
-  <div class="absolute inset-0 bg-black/60 z-0"></div>
+  <!-- Global dark overlay -->
+  <div class="absolute inset-0 bg-black/65 z-0"></div>
 
-  <!-- All content on top -->
+  <!-- All visible content -->
   <div class="relative z-10">
 
     <!-- Hero -->
-    <header class="py-32 px-6 md:py-48 md:px-12 text-center">
-      <div class="max-w-5xl mx-auto">
-        <!-- Logo – replace src -->
+    <header class="py-40 px-6 md:py-56 md:px-12 text-center">
+      <div class="max-w-5xl mx-auto glass-card p-12 md:p-20">
+        <!-- Logo – replace src with your real logo -->
         <img 
           src="https://via.placeholder.com/320x100/006d77/ffffff?text=CF+AI+Logo" 
           alt="Central Florida AI Solutions Logo" 
@@ -67,7 +68,7 @@
         </p>
 
         <a 
-          href="https://calendly.com/your-username/15min" 
+          href="https://calendly.com/your-username/15min"  <!-- ← Replace with your real Calendly link -->
           target="_blank"
           class="mt-12 inline-block bg-orange-600 hover:bg-orange-700 text-white font-bold text-xl px-12 py-6 rounded-full shadow-2xl transition transform hover:-translate-y-1"
         >
@@ -143,21 +144,21 @@
             <div class="flex items-start gap-6">
               <div class="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center text-2xl font-bold text-orange-400 flex-shrink-0">1</div>
               <div>
-                <h3 class="text-xl font-semibold mb-2">Schedule a Free Consultation</h3>
+                <h3 class="text-xl font-semibold mb-2 text-white">Schedule a Free Consultation</h3>
                 <p class="text-gray-300">Quick call to understand your biggest pain points and goals.</p>
               </div>
             </div>
             <div class="flex items-start gap-6">
               <div class="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center text-2xl font-bold text-orange-400 flex-shrink-0">2</div>
               <div>
-                <h3 class="text-xl font-semibold mb-2">We Build Your Solution</h3>
+                <h3 class="text-xl font-semibold mb-2 text-white">We Build Your Solution</h3>
                 <p class="text-gray-300">Custom prototype in one week, tailored exactly to your business.</p>
               </div>
             </div>
             <div class="flex items-start gap-6">
               <div class="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center text-2xl font-bold text-orange-400 flex-shrink-0">3</div>
               <div>
-                <h3 class="text-xl font-semibold mb-2">Enjoy Automated Efficiency</h3>
+                <h3 class="text-xl font-semibold mb-2 text-white">Enjoy Automated Efficiency</h3>
                 <p class="text-gray-300">Save time, capture more leads, and focus on growing.</p>
               </div>
             </div>
@@ -185,11 +186,11 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black/80 text-white/70 py-12 px-6 text-center text-sm border-t border-teal-900/50">
+    <footer class="bg-black/90 text-white/70 py-12 px-6 text-center text-sm border-t border-teal-900/50">
       <p>© 2026 Central Florida AI Solutions • Serving Chiefland, Williston, Gainesville & Central Florida</p>
     </footer>
 
-  </div> <!-- End of z-10 wrapper -->
+  </div> <!-- End z-10 wrapper -->
 
 </body>
 </html>
